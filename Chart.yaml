@@ -2,9 +2,9 @@ apiVersion: v2
 name: myapp
 version: 0.1.0
 description: A Helm chart for My Application
-home: https://github.com/myusername/myapp
+home: https://github.com/muhammedgamal760/Helm
 sources:
-  - https://github.com/myusername/myapp
+  - https://github.com/muhammedgamal760/Helm
 maintainers:
   - name: Muhammed Gamal
     email: muhammedgamal760@gmail.com
