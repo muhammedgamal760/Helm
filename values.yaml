@@ -1,0 +1,28 @@
+namespace: test  # Default namespace, can be overridden
+
+app:
+  name: flask-app
+  replicas: 3
+  containerName: flask-app
+  image:
+    repository: muhammedgamal/fp23
+    tag: latest
+  containerPort: 5000
+
+service:
+  name: flask-app-service
+  type: ClusterIP
+  port: 5000
+  targetPort: 5000
+
+externalSecret:
+  name: db-redis-secret
+  refreshInterval: "1h"
+  targetName: db-redis-secret
+  awsSecretKey: Db-Redis-Secret
+
+secretStore:
+  name: secretstore-sample
+
+aws:
+  region: us-east-1
